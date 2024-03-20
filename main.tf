@@ -185,7 +185,6 @@ resource "google_sql_user" "database_user" {
 
 data "google_dns_managed_zone" "nixor_zone" {
   name = var.dns_zone_name
-
 }
 
 resource "google_dns_record_set" "webapp_record" {
